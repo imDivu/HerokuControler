@@ -23,8 +23,8 @@ help_string = """<b>Available commands:</b>
 Join channel: @MissLilly_Support
 """
 
-non_admin = "<code>You Are Not Allowed To Use This cmd.\nDo</code> /help <code>For get more cmds.\nJoin channel:</code> @spookyanii"
-imDivu_start = "@MissHinata_bot's <code>Control center devloped & hosted by</code> @imDivu"
+non_admin = "<code>You Are Not Allowed To Use This cmd.\nDo</code> /help <code>For get more cmds.\nJoin Chat:</code> @MissLilly_Support"
+imDivu_start = "@MissHinata_bot's <code>Control Center devloped & hosted by</code> @imDivu"
 
 @run_async
 def startHandler(update,context):
@@ -32,13 +32,13 @@ def startHandler(update,context):
     message = update.effective_message
     user_id = message.from_user.id
     first_name = update.message.from_user.first_name
-    message.reply_text(f"Hey *{first_name}*, I'm *Hinata's Control Center bot* :)\n"
-                       "I manage Hinata's heroku app.\n\n"
+    message.reply_text(f"Hey *{first_name}*, I'm *Hinata's Controler Bot* :)\n"
+                       "I Manage Hinata's heroku app.\n\n"
                        "/admins: Get USER IDs list of who have power over me.\n\n"
                        "Admins are devided into two parts:\n"
                        "1: *Sudo Users* and\n"
                        "2: *Support Users.*\n\n"
-                       "Sudo users have full power over me and Support users can do almost everything except using some sudo and owner only commands like /restart.\n",
+                       "Sudo users have full power over me and Support users can do almost everything except using some sudo only commands like /restart.\n",
                        parse_mode=ParseMode.MARKDOWN)
     if int(user_id) in Config.SUDO_USERS:
         user_status = "Sudo user"
