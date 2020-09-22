@@ -1,34 +1,34 @@
 # Hinata-Control-Center
 
-# Available commands
+## Available commands
 
 
-/start: for start message.
+* `/start` : for start message.
 
-/help: for get this message.
+* `/help` : for get this message.
 
-/admins: get user ID's list of who have power over me.
+* `/admins` : get user ID's list of who have power over me.
 
-/restart: to restart @MissHinata_Bot.
+* `/restart` : to restart @MissHinata_Bot.
 
-/dynos: to check Stella's dyno usage.
+* `/dynos` : to check Stella's dyno usage.
 
-/log: get latest console log in .txt
-
-
-# Available veriables
+* `/log` : get latest console log in .txt
 
 
-BOT_TOKEN: Your bot token.
+## Available veriables
 
-SUDO_USERS: List of id's - (not usernames) for users. eg. [604968079, 802002142]
 
-SUPPORT_USERS: List of id's (not usernames) for users which are allowed to do almost everything except using some sudo and owner only commands like /restart.
+* `BOT_TOKEN`: Your bot token.
 
-LOGS: For bot's /restart logs.
+* `SUDO_USERS`: List of id's - (not usernames) for users. eg. [604968079, 802002142]
 
-TG_CHARACTER_LIMIT: keep it as default value.
+* `SUPPORT_USERS`: List of id's (not usernames) for users which are allowed to do almost everything except using some sudo and owner only commands like /restart.
 
-HEROKU_API_KEY: You heroku api key get it from [here](https://dashboard.heroku.com/account)
+* `LOGS`: For bot's /restart logs.
 
-HEROKU_APP_NAME: Your created heroku app name, which heroku app that you want to manage
+* `TG_CHARACTER_LIMIT`: keep it as default value.
+
+* `HEROKU_API_KEY`: You heroku api key get it from [here](https://dashboard.heroku.com/account)
+
+* `HEROKU_APP_NAME`: Your created heroku app name, which heroku app that you want to manage
