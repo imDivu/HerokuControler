@@ -1,9 +1,9 @@
 {
-    "name": "Stella's Control Center ",
-    "description": "Stella's Control Center is a telegram bot that uses Heroku API and helps manage heroku app from telegram",
+    "name": "Hinata's Control Center ",
+    "description": "Hinata's Control Center is a telegram bot that uses Heroku API and helps manage heroku app from telegram",
     "logo": "https://telegra.ph/file/086c947c7dd0f9797e764.jpg",
     "keywords": [
-      "stella",
+      "Hinata",
       "Control-Center",
       "telegram",
       "bot",
