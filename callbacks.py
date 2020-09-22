@@ -15,16 +15,16 @@ help_string = """<b>Available commands:</b>
 - /start: for start message.
 - /help: for get this message.
 - /admins: get user ID's list of who have power over me.
-- /restart: to restart @MissStella_bot.
+- /restart: to restart @MissHinata_Bot.
 - /dynos: to check Stella's dyno usage.
 - /log: to get latest console log in .txt
 - /about: to get info about me.
 
-Join channel: @spookyanii
+Join channel: @MissLilly_Support
 """
 
-non_admin = "<code>You are not allowed to use this command.\nDo</code> /help <code>for get more commands.\nJoin channel:</code> @spookyanii"
-meanii_start = "@MissStella_bot's <code>Control center devloped & hosted by</code> @meanii"
+non_admin = "<code>You Are Not Allowed To Use This cmd.\nDo</code> /help <code>For get more cmds.\nJoin channel:</code> @spookyanii"
+meanii_start = "@MissHinata_bot's <code>Control center devloped & hosted by</code> @imDivu"
 
 @run_async
 def startHandler(update,context):
@@ -32,8 +32,8 @@ def startHandler(update,context):
     message = update.effective_message
     user_id = message.from_user.id
     first_name = update.message.from_user.first_name
-    message.reply_text(f"Hey *{first_name}*, I'm *Stella's Control Center bot* :)\n"
-                       "I manage Stella's heroku app.\n\n"
+    message.reply_text(f"Hey *{first_name}*, I'm *Hinata's Control Center bot* :)\n"
+                       "I manage Hinata's heroku app.\n\n"
                        "/admins: Get USER IDs list of who have power over me.\n\n"
                        "Admins are devided into two parts:\n"
                        "1: *Sudo Users* and\n"
