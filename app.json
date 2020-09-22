@@ -10,7 +10,7 @@
       "heroku",
       "heroku-manger-bot"
     ],
-    "repository": "https://github.com/anilchauhanxda/StellaControlCenter",
+    "repository": "https://github.com/imdivu/HinataControler",
     "website": "https://meanii.me",
     "success_url": "https://t.me/stellaSysbot",
     "env": {
