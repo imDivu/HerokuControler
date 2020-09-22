@@ -193,5 +193,5 @@ def helpHandler(update,context):
 def aboutHandler(update,context):
     message = update.effective_message
     message.reply_text("Hey, I'm Developed & Hosted By - @imDivu\n"
-                       "I Can Control **Hinata** With Black Magic🌚\n"
+                       "I Can Control HINATA With Black Magic🌚\n"
                        "If You Find Any Issues & Problem Tell Us - @MissLilly_Support.")
