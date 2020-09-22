@@ -1,0 +1,47 @@
+{
+    "name": "Stella's Control Center ",
+    "description": "Stella's Control Center is a telegram bot that uses Heroku API and helps manage heroku app from telegram",
+    "logo": "https://telegra.ph/file/086c947c7dd0f9797e764.jpg",
+    "keywords": [
+      "stella",
+      "Control-Center",
+      "telegram",
+      "bot",
+      "heroku",
+      "heroku-manger-bot"
+    ],
+    "repository": "https://github.com/anilchauhanxda/StellaControlCenter",
+    "website": "https://meanii.me",
+    "success_url": "https://t.me/stellaSysbot",
+    "env": {
+      "BOT_TOKEN": {
+        "description": "Put your bot token."
+      },
+      "SUDO_USERS": {
+        "description": "Put here list of id's -  (not usernames) for users.",
+        "value": "604968079, 802002142"
+      },
+      "SUPPORT_USERS": {
+        "description": "Put here list of id's -  (not usernames) for users.",
+        "required": false,
+        "value": ""
+      },
+      "LOGS": {
+        "description": "Put here channel id -  (not usernames).",
+        "required": false,
+        "value": ""
+      },
+      "HEROKU_API_KEY": {
+        "description": " You heroku api"
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your created heroku app name, which heroku app that you want to manage."
+      }
+    },
+    "addons": [],
+    "buildpacks": [
+      {
+        "url": "heroku/python"
+      }
+    ]
+  }
