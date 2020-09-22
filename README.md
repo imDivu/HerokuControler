@@ -29,6 +29,6 @@ LOGS: For bot's /restart logs.
 
 TG_CHARACTER_LIMIT: keep it as default value.
 
-HEROKU_API_KEY: You heroku api key get it from here
+HEROKU_API_KEY: You heroku api key get it from [here](https://dashboard.heroku.com/account)
 
 HEROKU_APP_NAME: Your created heroku app name, which heroku app that you want to manage
