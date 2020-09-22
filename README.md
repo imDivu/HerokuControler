@@ -1,6 +1,6 @@
 # Hinata-Control-Center
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?remplate=https://github.com/imdivu/HinataControler)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?remplate=https://github.com/imdivu/HinataControler/tree/master)
 
 ## Available commands
 
