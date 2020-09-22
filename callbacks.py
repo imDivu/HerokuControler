@@ -24,7 +24,7 @@ Join channel: @MissLilly_Support
 """
 
 non_admin = "<code>You Are Not Allowed To Use This cmd.\nDo</code> /help <code>For get more cmds.\nJoin channel:</code> @spookyanii"
-meanii_start = "@MissHinata_bot's <code>Control center devloped & hosted by</code> @imDivu"
+imDivu_start = "@MissHinata_bot's <code>Control center devloped & hosted by</code> @imDivu"
 
 @run_async
 def startHandler(update,context):
@@ -49,7 +49,7 @@ def startHandler(update,context):
     bot.send_message(user_id,
                      f"Your are my *{user_status}*.\n"
                      "- /help: for more commands.\n"
-                     "- /about: to know more about *Stella's Control Center bot*.",
+                     "- /about: to know more about *Hinata's Control Center bot*.",
                      parse_mode=ParseMode.MARKDOWN)
         
     
@@ -174,7 +174,7 @@ def dynosHandler(update, context):
         AppHours = math.floor(AppQuotaUsed / 60)
         AppMinutes = math.floor(AppQuotaUsed % 60)
         
-        return message.reply_text("*Stella's Dyno Usage*:\n"
+        return message.reply_text("*Hinata's Dyno Usage*:\n"
                             f"*Dyno usage for {HEROKU_APP_NAME}*:\n"
                             f"- _{AppHours}h {AppMinutes}m | {AppPercentage}% _\n"
                             "*Dyno hours quota remaining this month*:\n"
@@ -192,9 +192,9 @@ def helpHandler(update,context):
 @run_async
 def aboutHandler(update,context):
     message = update.effective_message
-    message.reply_text("This bot is developed & hosted by @meanii.\n"
+    message.reply_text("This bot is developed & hosted by @imDivu.\n"
                        "and this bot is licensed under the [GNU General Public License v3.0.](https://github.com/anilchauhanxda/StellaControlCenter/blob/master/LICENSE)\n"
-                       "You can fork from [here](https://github.com/anilchauhanxda/StellaControlCenter)\n"
+                       "You can fork from [here](https://github.com/imdivu/HinataControler)\n"
                        "Join his broadcast channel @spookyanii for get more updates.",
                        parse_mode=ParseMode.MARKDOWN,
                        disable_web_page_preview=True)
