@@ -49,7 +49,7 @@ def startHandler(update,context):
     bot.send_message(user_id,
                      f"Your are my *{user_status}*.\n"
                      "- /help: for more commands.\n"
-                     "- /about: to know more about *Hinata's Control Center bot*.",
+                     "- /about: to know more about *Hinata's Controller Bot*.",
                      parse_mode=ParseMode.MARKDOWN)
         
     
@@ -192,9 +192,8 @@ def helpHandler(update,context):
 @run_async
 def aboutHandler(update,context):
     message = update.effective_message
-    message.reply_text("This bot is developed & hosted by @imDivu.\n"
-                       "and this bot is licensed under the [GNU General Public License v3.0.](https://github.com/anilchauhanxda/StellaControlCenter/blob/master/LICENSE)\n"
-                       "You can fork from [here](https://github.com/imdivu/HinataControler)\n"
-                       "Join his broadcast channel @spookyanii for get more updates.",
+    message.reply_text("Hey, I'm Developed & Hosted By - @imDivu\n"
+                       "I Can Control [Hinata](t.me/MissHinata_Bot) With Black Magic🌚\n"
+                       "If You Find Any Issues & Problem Tell Us - @MissLilly_Support.",
                        parse_mode=ParseMode.MARKDOWN,
                        disable_web_page_preview=True)
