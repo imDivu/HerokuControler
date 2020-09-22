@@ -195,5 +195,4 @@ def aboutHandler(update,context):
     message.reply_text("Hey, I'm Developed & Hosted By - @imDivu\n"
                        "I Can Control Hinata With Black Magic🌚\n"
                        "If You Find Any Issues & Problem Tell Us - @MissLilly_Support.",
-                       parse_mode=ParseMode.MARKDOWN,
-                       disable_web_page_preview=True)
+                       parse_mode=ParseMode.MARKDOWN)
