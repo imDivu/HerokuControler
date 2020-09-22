@@ -19,7 +19,7 @@
       },
       "SUDO_USERS": {
         "description": "Put here list of id's -  (not usernames) for users.",
-        "value": "604968079, 802002142"
+        "value": "943978681"
       },
       "SUPPORT_USERS": {
         "description": "Put here list of id's -  (not usernames) for users.",
