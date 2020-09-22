@@ -193,6 +193,5 @@ def helpHandler(update,context):
 def aboutHandler(update,context):
     message = update.effective_message
     message.reply_text("Hey, I'm Developed & Hosted By - @imDivu\n"
-                       "I Can Control Hinata With Black Magic🌚\n"
-                       "If You Find Any Issues & Problem Tell Us - @MissLilly_Support.",
-                       parse_mode=ParseMode.MARKDOWN)
+                       "I Can Control [Hinata](t.me/MissHinata_Bot) With Black Magic🌚\n"
+                       "If You Find Any Issues & Problem Tell Us - @MissLilly_Support.")
