@@ -1,7 +1,7 @@
 {
     "name": "Hinata's Control Center ",
     "description": "Hinata's Control Center is a telegram bot that uses Heroku API and helps manage heroku app from telegram",
-    "logo": "https://telegra.ph/file/086c947c7dd0f9797e764.jpg",
+    "logo": "https://telegra.ph/file/d109f65ea011333525990.jpg",
     "keywords": [
       "Hinata",
       "Control-Center",
@@ -12,7 +12,7 @@
     ],
     "repository": "https://github.com/imdivu/HinataControler",
     "website": "https://meanii.me",
-    "success_url": "https://t.me/stellaSysbot",
+    "success_url": "https://t.me/The_Anime_Heaven",
     "env": {
       "BOT_TOKEN": {
         "description": "Put your bot token."
