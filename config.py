@@ -8,3 +8,6 @@ class Config:
     SUPPORT_USERS = [int(user) for user in os.environ.get("SUPPORT_USERS").split(",")]
     TG_CHARACTER_LIMIT = 4000 
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME","")
+    BOT_NAME = os.environ.get("BOT_NAME","")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME","")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT","")
