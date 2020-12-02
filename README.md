@@ -11,9 +11,9 @@
 
 * `/admins` : get user ID's list of who have power over me.
 
-* `/restart` : to restart @MissHinata_Bot.
+* `/restart` : to restart @ElitesOfRobot.
 
-* `/dynos` : to check Hinata's dyno usage.
+* `/dynos` : to check Chizuru's dyno usage.
 
 * `/log` : get latest console log in .txt
 
