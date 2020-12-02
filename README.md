@@ -1,4 +1,4 @@
-# Hinata-Control-Center
+# Heroku-Control-Center
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/imdivu/HinataControler/tree/master)
 
