@@ -11,20 +11,20 @@ import math
 import heroku3
 from telegram.utils.helpers import mention_html
 
-help_string = """<b>Available commands:</b>
+help_string = f"""<b>Available commands:</b>
 - /start: for start message.
 - /help: for get this message.
 - /admins: get user ID's list of who have power over me.
-- /restart: to restart @MissHinata_Bot.
-- /dynos: to check Stella's dyno usage.
+- /restart: to restart @{Config.BOT_USERNAME}.
+- /dynos: to check {Config.BOT_NAME}'s dyno usage.
 - /log: to get latest console log in .txt
 - /about: to get info about me.
 
-Join channel: @MissLilly_Support
+Join channel: @{Config.SUPPORT_CHAT}
 """
 
-non_admin = "<code>You Are Not Allowed To Use This cmd.\nDo</code> /help <code>For get more cmds.\nJoin Chat:</code> @MissLilly_Support"
-imDivu_start = "@MissHinata_bot's <code>Control Center devloped & hosted by</code> @imDivu"
+non_admin = f"<code>You Are Not Allowed To Use This cmd.\nDo</code> /help <code>For get more cmds.\nJoin Chat:</code> @{Config.SUPPORT_CHAT}"
+imDivu_start = f"@{Config.BOT_USERNAME}'s <code>Control Center devloped & hosted by</code> @imDivu"
 
 @run_async
 def startHandler(update,context):
@@ -32,13 +32,13 @@ def startHandler(update,context):
     message = update.effective_message
     user_id = message.from_user.id
     first_name = update.message.from_user.first_name
-    message.reply_text(f"Hey *{first_name}*, I'm *Hinata's Controler Bot* :)\n"
-                       "I Manage Hinata's heroku app.\n\n"
+    message.reply_text(f"Hey *{first_name}*, I'm *{Config.BOT_NAME}'s Controler Bot* :)\n"
+                       f"I Manage {Config.BOT_NAME}'s heroku app.\n\n"
                        "/admins: Get USER IDs list of who have power over me.\n\n"
                        "Admins are devided into two parts:\n"
                        "1: *Sudo Users* and\n"
                        "2: *Support Users.*\n\n"
-                       "Sudo users have full power over me and Support users can do almost everything except using some sudo only commands like /restart.\n",
+                       "Sudo users have full power over me and Support users can do almost everything.\n",
                        parse_mode=ParseMode.MARKDOWN)
     if int(user_id) in Config.SUDO_USERS:
         user_status = "Sudo user"
@@ -49,7 +49,7 @@ def startHandler(update,context):
     bot.send_message(user_id,
                      f"Your are my *{user_status}*.\n"
                      "- /help: for more commands.\n"
-                     "- /about: to know more about *Hinata's Controller Bot*.",
+                     f"- /about: to know more about *{Config.BOT_NAME}'s Controller Bot*.",
                      parse_mode=ParseMode.MARKDOWN)
         
     
@@ -174,7 +174,7 @@ def dynosHandler(update, context):
         AppHours = math.floor(AppQuotaUsed / 60)
         AppMinutes = math.floor(AppQuotaUsed % 60)
         
-        return message.reply_text("*Hinata's Dyno Usage*:\n"
+        return message.reply_text(f"*{Config.BOT_NAME}'s Dyno Usage*:\n"
                             f"*Dyno usage for {HEROKU_APP_NAME}*:\n"
                             f"- _{AppHours}h {AppMinutes}m | {AppPercentage}% _\n"
                             "*Dyno hours quota remaining this month*:\n"
@@ -193,5 +193,5 @@ def helpHandler(update,context):
 def aboutHandler(update,context):
     message = update.effective_message
     message.reply_text("Hey, I'm Developed & Hosted By - @imDivu\n"
-                       "I Can Control HINATA With Black Magic🌚\n"
-                       "If You Find Any Issues & Problem Tell Us - @MissLilly_Support.")
+                       f"I Can Control {Config.BOT_NAME} With Black Magic🌚\n"
+                       f"If You Find Any Issues & Problem Tell Us - @{Config.SUPPORT_CHAT}.")
